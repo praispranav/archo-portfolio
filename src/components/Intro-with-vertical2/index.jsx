@@ -1,5 +1,4 @@
 import React from "react";
-import intro2Data from "../../data/Intro2.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Split from "../Split";
 import Link from "next/link";
@@ -9,6 +8,51 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import removeSlashFromPagination from "../../common/removeSlashFromPagination";
+
+const intro2Data = [
+  {
+    id: 1,
+    title: { first: "Microservices", second: "High Level System Design" },
+    content: {
+      first:
+        " The goal of high-level system design is to identify the main components of the system, define their interfaces and dependencies",
+      second:
+        "and create a logical structure for the system that is easy to understand, maintain, and scale.",
+    },
+    image: "/assets/img/slid/n/01.jpg",
+  },
+  {
+    id: 1 + 1,
+    title: { first: "Web Development", second: "React Js/Ts" },
+    content: {
+      first:
+        "Web Developers are responsible for creating, coding, and maintaining the front-end of websites.",
+      second:
+        "The final product will be functional, user-friendly and optimized for the web.",
+    },
+    image: "/assets/img/slid/n/01.jpg",
+  },
+  {
+    id: 2 + 1,
+    title: { first: "Mobile App", second: "React Native (Android/iOS)" },
+    content: {
+      first:
+        "Unique Mobile Designs with notification, chat, voice chats, google maps, etc.",
+      second: "The final product will be fully optimized with clean code.",
+    },
+    image: "/assets/img/slid/n/02.jpg",
+  },
+  {
+    id: 3 + 1,
+    title: { first: "Server", second: "Node Js" },
+    content: {
+      first:
+        "Secure server is required in every project even user interface is not good.",
+      second: "Low latency, highly-scalable and clean database structure.",
+    },
+    image: "/assets/img/slid/n/03.jpg",
+  },
+];
 
 SwiperCore.use([Navigation, Pagination, Parallax]);
 
